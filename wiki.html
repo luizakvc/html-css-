@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 19/09/2022</title>
+</head>
+<body>
+    <header>
+        <h1>Estudo do html</h1>
+        <h3>Conceitos introdutórios da linguagem</h3>
+        <nav> <!--Agrupa links de navegação da página-->
+            <ol>
+                <li><a href="#intro">Introdução</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main> <!-- Conteúdo Principal da Página-->
+        <section> <!--Separa tópicos/conteúdos-->
+            <h3>Uso de Tags</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam error libero perspiciatis enim dolorum facilis reprehenderit officia quo inventore fugit! Magni suscipit nisi dolor eius.</p>
+        </section>
+        <section>
+            <h3>Uso de Tabelas</h3>
+            <table border="1" cellpadding="3" style="border-collapse: collapse;"> <!-- tabela-->
+                <caption>Tabela com todos os usuários</caption>
+                <thead> <!--table head - cabeçalho da tabela-->
+                    <tr>
+                        <th colspan="4">Usuários</th>
+                    </tr>
+                    <tr> <!--table row - linha da tabela-->
+                        <th>Tipo</th>
+                        <th>Nome</th> <!--header cell - cabeçalho da célula/coluna-->
+                        <th>CPF</th>
+                        <th>Data Nasc.</th>
+                    </tr>
+                </thead>
+                <tbody>                    
+                    <tr> <!--table row - linha da tabela-->
+                        <td rowspan="2">Funcionário</td> <!--célula que abrange duas linhas:-->
+                        <td>Daniel Guedes</td> <!--data cells - célula de dados-->
+                        <td>546.657.444-00</td>
+                        <td>20/09/1986</td>
+                    </tr>
+                    <tr>
+                        <!--<td> preenchida pelo rowspan-->
+                        <td>José Silva</td>
+                        <td>657.452.663-20</td>
+                        <td>12/01/2000</td>
+                    </tr>
+                    <tr>
+                        <td>Cliente</td>
+                        <td>Maria José</td>
+                        <td>435.444.777-12</td>
+                        <td>14/03/2002</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <br>
+        <section>
+            <table border="1" cellpadding="4" style="border-collapse: collapse;">
+                <caption>Tabela 2</caption>
+                <tr>
+                    <td colspan="2">Célula 1-1</td>
+                    <td>Célula 1-3</td>
+                </tr>
+                <tr>
+                    <td>Célula 2-1</td>
+                    <td>Célula 2-2</td>
+                    <td>Célula 2-3</td>
+                </tr>
+            </table>            
+        </section>
+    </main>
+    <hr /> <!--Horizontal Rule-->
+    <footer>
+        ©
+        <script>
+            document.write(new Date().getFullYear())
+        </script>
+        SoulCode Academy
+    </footer>
+    
+</body>
+</html>
