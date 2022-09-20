@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="inputNome">Nome Completo</label><br>
+            <input id="inputNome" name="inputNome" type="text" placeholder="Digite seu nome" required>
+        </div>
+        <div>
+            <label for="inputEmail">E-mail</label><br>
+            <input id="inputEmail" type="email" name="inputEmail" placeholder="seunome@exemplo.com" required>
+        </div>
+        <div>
+            <label for="inputSenha">Senha</label><br>
+            <input id="inputSenha" type="password" name="inputSenha" placeholder="Crie Sua Senha" required minlength="6">
+        </div>
+        <div>
+            <label for="inputConfirmeSenha">Confirme Sua Senha</label><br>
+            <input id="inputConfirmeSenha" type="password" name="" placeholder="Confirme Sua Senha" required minlength="6"> 
+        </div>
+        <div>
+            <label for="selectProfissao">Profissão</label><br>
+            <select name="selectProfissao" id="selectProfissao" required>
+                <option value="" selected disabled>Selecione Sua Profissão</option>
+                <option value="professor">Professor</option>
+                <option value="tecnico">Técnico</option>
+                <option value="especialista">Especialista</option>
+                <option value="nda">Nenhuma das Anteriores</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Idioma Nativo</label><br>
+            <input id="inputIdioma1" type="radio" name="idioma" value="ingles" required>
+            <label for="inputIdioma1">Inglês</label>
+            <input id="inputIdioma2" type="radio" name="idioma" value="espanhol" required>
+            <label for="inputIdioma2">Espanhol</label>
+            <input id="inputIdioma3" type="radio" name="idioma" value="portugues" required>
+            <label for="inputIdioma3">Português</label>
+        </div>
+        <div>
+            <label for="textAreaResumo">Fale Sobre Você</label><br>
+            <textarea name="textAreaResumo" id="textAreaResumo" cols="30" rows="5" maxlength="128" placeholder="Descreva Sua Vida Profissional"></textarea>
+        </div>
+        <div>
+            <input id="checkTermos" type="checkbox" name="concordaTermos" required>
+            <label for="checkTermos">Concordo Com o Termos de Serviço</label>
+        </div>
+        <hr>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+        <button type="button" onclick="alert('Outro!')">Outro</button>
+    </form>
+</body>
+</html>
