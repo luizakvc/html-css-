@@ -7,7 +7,7 @@ p{
 }
 
 body {
-    background-color: gray;
+    background-color: rgb(175, 163, 163);
     font-family: "Montserrat", sans-serif
 }
 
@@ -42,6 +42,6 @@ h1, h2, h3 { /*aplicar um style para varios elementos, separar por , */
 }
 
 .banner {
-    width: 100%;
+    width: 15%;
     border-radius: 16px;
 }
