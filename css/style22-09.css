@@ -1,53 +1,82 @@
+/** Para usar esse CSS externo, devemos linkar no html destino
+<link rel="stylesheet" href="link do cod css"*/
+p {
+    color: green;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+body {
+   /* background-color: pink; */
+    font-family: 'Arial', sans-serif; /**fallback( usa alguma fonte que se encaixa em sans-serif */
+}
+
+/** Tipos de Seletor básico
+* 1- Por elemento
+* 2- Por id (#) = estilização única
+* 3- Por class (.) = estilização para varios */
+h1, h2 {
+    color: white;
+}
+
+#meu-h1 {
+    font-weight: 100;
+}
+
+.cabecalho { /** diversos elementos */
+    color: crimson;
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.quadrado {
+    width: 250px;
+    height:200px;
+    background-color: yellow;
+    border-radius: 16px;
+
+}
+
+.banner {
+    width: 100%;
+    border-radius:18px;
+}
+
 h3 {
     background-color: red;
 }
 
 .box1 {
     background-color: coral;
-    /* espaçamento interno */
-    padding: 16px; 
-    /* espaçamento externo */
-    margin: 10px;
+    padding: 16px; /* Espaçamento interno*/
+    margin: 8px; /* Espaçamento externo*/
 }
-
 .box2 {
     background-color: green;
-    padding: 10px 20px 4px 10px;
-    margin: 10px 10px 20px 40px;
+    padding: 15px 20px 5px 10px; /* espaçamento top, right, botton, left */
+    margin: 10px 20px 3px 15px
 }
-
 .box3 {
-    background-color: brown;
-    /* espessura estilo cor*/
-    /* ex: dashed, dotted, solid*/
-    border: 2px solid yellow;
-    border-radius: 10px;
+    background-color: rgb(131, 178, 240);
+    border: 3px solid yellow; /* espessura estilo cor*/
     padding: 10px;
-    margin: 10px;
+    border-radius: 15px;
+    margin:10px;
 }
-
-.box4 {
-    background-color: seagreen;
-    width: 400px;
+.box4 { 
+    background-color: aquamarine;
+    width: 400px; /* padding + width ele desobedece algum*/
     padding: 20px;
-    border: 5px solid red;
-}
-/* * = todos os elementos */
-* {
-    box-sizing: border-box;
+    border: 4px solid black
 }
 
+* { /* o * = a aplicação vai para todos os elementos */ 
+    box-sizing: border-box /* comando para respeitar o tamanho da borda e não o padding*/
+}
 
 body {
-    padding: 0;
-    margin: 0;
-    background-image: url("https://soulcodeacademy.org/assets/images/logo/light-logo.png");
-    /* y = vertical,  x = horizontal */
+    background-image: url("/img/light-logo.png"); 
     background-repeat: no-repeat;
-    /*cover = zoom */
-    /* contain = respeita a dimensão */
-    /*background-size: contain; */
-    background-position: center; 
+    background-position: right bottom;
     background-attachment: fixed;
-    /* background-attachment fica a imagem quando da scrool */
 }
