@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 1px;
+    font-family: 'Arial', sans-serif;
+}
+
+.box-1 {
+    background-color: aqua;
+}
+
+.box-2 {
+    background-color: rgb(247, 109, 132);
+}
+
+.box-3 {
+    background-color: coral;
+}
+
+.box-4 {
+    background-color: darkolivegreen;
+}
+
+.container-flex{
+    background-color: #ddd;
+    display: flex; /*Ativa o flexbox */
+    flex-direction: row; /* Deixar as DiV lado a lado */
+    flex-wrap: wrap; /* Quebra linha para manter o espaçamento dos boxes */
+    justify-content: center; /* centraliza os elementos no eixo main: space-around, space-between, space-acenly */
+    /* elementos no eixo cross */
+    height: 350px;
+    align-items: center; 
+    align-content: center; /* tira o espaço entre os box quando diminui o tamanho da página */
+    gap: 8px;
+     /* espaçamento entre os box = margin */
+}
+
+.box-1, .box-2, .box-3, .box-4 {
+    width: 200px;
+    padding: 8px;
+    border-radius: 8px;
+}
